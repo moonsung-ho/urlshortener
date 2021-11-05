@@ -2,43 +2,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 * {
-    font-family: Poppins, 'Spoqa Han Sans Neo', -apple-system, BlinkMacSystemFont,
+  font-family: Poppins, 'Spoqa Han Sans Neo', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
 }
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 1300% 1300%;
-    animation: gradient 15s ease infinite;
-    height: 100%;
-    text-align: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 1300% 1300%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+  text-align: center;
 }
 
 p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 div {
-    margin-top: 23vh;
-    border-radius: 5px;
-    border: 1px solid #000;
-    text-align: center !important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    background-color: #fff;
-    height: 40%;
-    text-align: center;
-    display: inline-block;
-    padding: 2rem;
-    width: 40%;
+  margin-top: 23vh;
+  border-radius: 5px;
+  border: 1px solid #000;
+  text-align: center !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
+  height: 40%;
+  text-align: center;
+  display: inline-block;
+  padding: 2rem;
+  width: 40%;
 }
 
 input {
-    text-align: center;
-    width: 90% !important;
-    margin-bottom: 10px;
-    outline: none;
+  text-align: center;
+  width: 90% !important;
+  margin-bottom: 10px;
+  outline: none;
   width: 95%;
   background: transparent;
   border: 1px solid gray;
@@ -47,41 +47,40 @@ input {
 }
 
 input:hover {
-    outline: 2px solid #65769a;
+  outline: 2px solid #65769a;
 }
 
 button:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 button {
-    width: 40%;
-    background: none;
-    border-left: none;
-    background-color: #65769a;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    color: white;
+  width: 40%;
+  background: none;
+  border-left: none;
+  background-color: #65769a;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
 }
 
 #copy {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 #close {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-  
