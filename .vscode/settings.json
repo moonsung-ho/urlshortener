@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/1cf850c3-539d-410a-bf98-f20a112417a5/resourceGroups/cloud-shell-storage-southeastasia/providers/Microsoft.Web/sites/baro",
+    "appService.deploySubpath": "."
+}
