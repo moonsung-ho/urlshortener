@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>url</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  </head>
-  <body>
-    <div class="form">
-      <p>단축할 URL</p>
-      <input
-        type="text"
-        placeholder="https://example.com"
-        required
-        id="urlinput"
-      />
-      <div class="customurl">
-        <label for="customurlcheckbox">커스텀 URL 사용</label
-        ><input type="checkbox" name="커스텀 URL 사용" id="customurlcheckbox" />
-      </div>
-      <div class="custom">
-        <p id="customp">커스텀 URL</p>
-        <input type="text" placeholder="커스텀 URL" required id="customurl" />
-        <br />
-      </div>
-      <button type="submit">단축!</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URL 단축기</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+  <div class="form">
+    <p>단축할 URL</p>
+    <input type="text" placeholder="https://example.com" required id="urlinput" />
+    <div class="customurl">
+      <label for="customurlcheckbox">커스텀 URL 사용</label><input type="checkbox" name="커스텀 URL 사용"
+        id="customurlcheckbox" />
     </div>
-    <script src="./script.js"></script>
-  </body>
+    <div class="custom">
+      <p id="customp">커스텀 URL</p>
+      <input type="text" placeholder="커스텀 URL" required id="customurl" />
+      <br />
+    </div>
+    <button type="submit">단축!</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
 </html>

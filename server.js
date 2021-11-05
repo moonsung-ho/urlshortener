@@ -83,6 +83,6 @@ const nameSchema = new mongoose.Schema({
 const model = mongoose.model('urls', Schema);
 const db = mongoose.connection;
 
-server.listen(3000, () => {
-    console.log('Server is running on port 3000');
+server.listen(process.env.PORT || 80, () => {
+    console.log('Server is running on port 80');
 });

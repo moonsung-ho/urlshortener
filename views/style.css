@@ -21,6 +21,14 @@ input[type='text'] {
   border-radius: 10px;
   margin-bottom: 24px;
 }
+
+input:focus {
+  outline: 2px solid #65769a;
+}
+
+button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 input[type='text']::placeholder {
   color: gray;
   font-weight: 300;
@@ -36,6 +44,7 @@ label {
 input[type='checkbox'] {
     background-color: #65769a !important;
     margin-bottom: 20px;
+    border-radius: 50px;
 }
 button {
   background: none;
