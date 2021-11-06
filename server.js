@@ -14,10 +14,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/urlsubmit', (req, res) => {
-    if (req.query.custom === "none") {
+    if (req.query.custom === "none" || req.query.custom === "") {
         let random = Math.random().toString(36).substr(2, 6)
         if (model.find({ shorturl: random }, (err, data) => {
-            random = Math.random().toString(36).substr(2, 6)
+            let random = Math.random().toString(36).substr(2, 6)
         }));
         res.redirect(`urlsubmitted.html?url=${random}`);
         db.collection('urls').insertOne({
