@@ -7,7 +7,9 @@
     sans-serif;
 }
 body {
+  position: relative;
   background-color: #fff;
+  height: 100vh;
 }
 input {
   border: none;
@@ -95,4 +97,9 @@ body {
 
 h1 {
   margin-top: 0;
+}
+footer {
+  position: fixed;
+  bottom: 0.75rem;
+  right: 0.75rem;
 }

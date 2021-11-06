@@ -3,7 +3,22 @@ function click() {
     if (document.querySelector("#urlinput").value.includes(".")) {
         console.log(`${window.location.protocol}//${window.location.host}/urlsubmit?url=${document.querySelector("#urlinput").value}`);
         if (document.querySelector("#customurlcheckbox").checked) {
-            location.href = `${window.location.protocol}//${window.location.host}/urlsubmit?url=${document.querySelector("#urlinput").value}&custom=${document.querySelector("#customurl").value}`;
+            if (document.querySelector("#customurl").value.length > 2) {
+                location.href = `${window.location.protocol}//${window.location.host}/urlsubmit?url=${document.querySelector("#urlinput").value}&custom=${document.querySelector("#customurl").value}`;
+            } else {
+                Toastify({
+                    text: "커스텀 url은 3글자 이상 입력해야 합니다",
+                    duration: 3000,
+                    close: true,
+                    gravity: "bottom", // `top` or `bottom`
+                    position: "right", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                        background: "tomato",
+                    },
+                    onClick: function () { } // Callback after click
+                }).showToast();
+            }
         } else {
             location.href = `${window.location.protocol}//${window.location.host}/urlsubmit?url=${document.querySelector("#urlinput").value}&custom=none`;
         }
